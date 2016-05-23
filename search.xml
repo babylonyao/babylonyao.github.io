@@ -6,7 +6,7 @@
     <entry>
       <title><![CDATA[开篇]]></title>
       <url>http://babylonyao.github.io/2016/05/23/first/</url>
-      <content type="html"><![CDATA[<p>#开篇<br>大家好，我是YC，这是我的技术博客，以后会在这里和大家分享技术和心情等，谢谢大家。</p>
+      <content type="html"><![CDATA[<h1 id="开篇"><a href="#开篇" class="headerlink" title="开篇"></a>开篇</h1><p>大家好，我是博主YC，这是我的技术博客，以后会在这里和大家分享技术和心情等，今天就说到这里，谢谢大家。</p>
 ]]></content>
     </entry>
     
