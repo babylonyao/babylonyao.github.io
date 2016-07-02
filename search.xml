@@ -4,6 +4,40 @@
   
     
     <entry>
+      <title><![CDATA[h5元素的分类及语义化]]></title>
+      <url>http://babylonyao.github.io/2016/07/02/html5element01/</url>
+      <content type="html"><![CDATA[<h1 id="h5元素的分类及语义化"><a href="#h5元素的分类及语义化" class="headerlink" title="h5元素的分类及语义化"></a>h5元素的分类及语义化</h1><p>最近在看《HTML5+CSS从入门到精通》，很久以前买的，感觉不是一本好书，但本着不浪费的原则还是开始看了。书里面讲到了Html5的新标签的用法，有些标签看过，但并不知道在哪个时期合理的去用他，以达到页面的语义化，在这里做一个分享和记录，以后要写Html之前，翻开看看，也许会有领悟。</p>
+<h2 id="1-结构性元素"><a href="#1-结构性元素" class="headerlink" title="1.结构性元素"></a>1.结构性元素</h2><p>结构性元素主要负责Web的上下文结构的定义，确保HMTL文档的完整性。</p>
+<h3 id="section"><a href="#section" class="headerlink" title="section"></a>section</h3><p>在Web页面应用中，该元素也可以用于区域的章节表述。</p>
+<h3 id="header"><a href="#header" class="headerlink" title="header"></a>header</h3><p>页面主体上的头部，注意区别于head元素。这里可以给初学者提供一个判断的小技巧：head元素中的内容旺旺是不可见的，而header元素往往在一对body元素之中。</p>
+<blockquote>
+<p>本人注，并不一定要只写在<strong>body</strong>标签之中，也可以写在<strong>section</strong>，下面我会给出具体使用的例子。</p>
+</blockquote>
+<h3 id="footer"><a href="#footer" class="headerlink" title="footer"></a>footer</h3><p>页面的地步（页脚）。通常会在这里标出网站的一些相关信息，例如，关于我们、法律申明、邮件信息和管理入口等。</p>
+<h3 id="nav"><a href="#nav" class="headerlink" title="nav"></a>nav</h3><p>是专门用于菜单导航、链接导航的元素，是navigator的缩写。</p>
+<h3 id="article"><a href="#article" class="headerlink" title="article"></a>article</h3><p>用于表示一篇文章的主体内容，一般为文字集中显示的区域。</p>
+<h2 id="2-级块性元素"><a href="#2-级块性元素" class="headerlink" title="2.级块性元素"></a>2.级块性元素</h2><p>级块性元素主要完成Web页面区域的划分，确保内容的有效分隔。</p>
+<h3 id="aside"><a href="#aside" class="headerlink" title="aside"></a>aside</h3><p>用以表达注记、贴士、侧栏、摘要、插入的而引用等作为补充主体的内容。从一个简单页面显示上看，就是侧边栏。从一个布局看，就是摘要。</p>
+<h3 id="figure"><a href="#figure" class="headerlink" title="figure"></a>figure</h3><p>是对多个元素进行组合并展示的元素，通常与<strong>figcaption</strong>联合使用。</p>
+<p>###code<br>表示一段代码块</p>
+<h3 id="dialog"><a href="#dialog" class="headerlink" title="dialog"></a>dialog</h3><p>用于表达人与人之间的对话。该元素还包括<strong>dt</strong>和<strong>dd</strong>这两个元素组合，他们常常同时使用。<strong>dt</strong>用于表示说话者，而<strong>dd</strong>则用来表示说话者说的内容。（作者注：这元素有个鸟用，用网页写小说？）</p>
+<h2 id="3-行内语义性元素"><a href="#3-行内语义性元素" class="headerlink" title="3.行内语义性元素"></a>3.行内语义性元素</h2><p>行内语义性元素主要完成Web页面具体内容的引用和表述，是丰富内容展示的基础。</p>
+<h3 id="meter"><a href="#meter" class="headerlink" title="meter"></a>meter</h3><p>表示特定范围内的数值，可用于工资、数量、百分比等。</p>
+<h3 id="time"><a href="#time" class="headerlink" title="time"></a>time</h3><p>表示时间值。</p>
+<h3 id="progress"><a href="#progress" class="headerlink" title="progress"></a>progress</h3><p>用来表示进度条，可通过对其max、min、step等属性进行控制，完成对进度的表示和监视。</p>
+<h3 id="video"><a href="#video" class="headerlink" title="video"></a>video</h3><p>视频元素，用于支持和实现视频（含视频流）文件的直接播放，支持缓冲鱼仔和多种视频媒体格式，如MEPG-4、OggV和WebM等。</p>
+<h3 id="audio"><a href="#audio" class="headerlink" title="audio"></a>audio</h3><p>音频元素，用于支持和实现音频（音频流）文件的直接播放，支持缓冲预载和多重音频媒体格式。</p>
+<h2 id="交互性元素"><a href="#交互性元素" class="headerlink" title="交互性元素"></a>交互性元素</h2><p>交互性元素主要用于功能性的内容表达，会有一定的内容和数据的关联，是各种事件的基础。</p>
+<h3 id="details"><a href="#details" class="headerlink" title="details"></a>details</h3><p>用来表示一段具体的内容，但是内容默认可能不显示，通过某种手段（如单击）与lengend交互才会显示出来。</p>
+<h3 id="datagrid"><a href="#datagrid" class="headerlink" title="datagrid"></a>datagrid</h3><p>用来控制客户端数据与显示，可以由动态脚本及时更新。</p>
+<h3 id="menu"><a href="#menu" class="headerlink" title="menu"></a>menu</h3><p>主要用于交互菜单（这是一个曾被废弃现在又被重新启用的元素）。</p>
+<h3 id="command"><a href="#command" class="headerlink" title="command"></a>command</h3><p>用来处理命令按钮。</p>
+<p>作者注：<br>说实话楼上3个元素我都不知道具体是干嘛的，以后应用到了会再和大家分享。</p>
+<p>结语，这甚至不能算是笔记，在这里我就简略的记录一下，等到书后面再慢慢展开关于上面一些元素的用法。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[开篇]]></title>
       <url>http://babylonyao.github.io/2016/05/23/first/</url>
       <content type="html"><![CDATA[<h1 id="开篇"><a href="#开篇" class="headerlink" title="开篇"></a>开篇</h1><p>大家好，我是博主YC，这是我的技术博客，以后会在这里和大家分享技术和心情等，今天就说到这里，谢谢大家。</p>
